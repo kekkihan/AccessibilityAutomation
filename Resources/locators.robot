@@ -27,3 +27,11 @@ ${EY LOGO}                  //*[@id="block-hh-content"]/div/div/div[2]/div/div/d
 ${OP LOGO}                  //*[@id="block-hh-content"]/div/div/div[2]/div/div/div[7]/div/div[2]/div/div[2]/div/div/div/div[3]/div/div[2]/a/svg
 ${TUOKKO LOGO}              //*[@id="block-hh-content"]/div/div/div[2]/div/div/div[7]/div/div[2]/div/div[2]/div/div/div/div[4]/div/div[2]/a/svg
 ${SALOMAA LOGO}             //*[@id="block-hh-content"]/div/div/div[2]/div/div/div[7]/div/div[2]/div/div[2]/div/div/div/div[5]/div/div[2]/a/svg
+
+### Feedback form ###
+${NAME FIELD}               id:edit-nimesi
+${EMAIL FIELD}              id:edit-sahkopostiosoitteesi
+${FEEDBACK}                 id:edit-palautteeni
+${URL FIELD}                id:edit-mita-sivua-palaute-koskee-anna-sivun-url-osoite-selaimen-osoitek
+${RADIO YES}                id:edit-haluan-vastauksen-palautteeseeni-kyll
+${RADIO NO}                 id:edit-haluan-vastauksen-palautteeseeni-en

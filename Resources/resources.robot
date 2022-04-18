@@ -10,6 +10,11 @@ Open Browser To Haaga-Helia Main Page
     Maximize Browser Window
     Set Selenium Speed                      ${DELAY}
 
+Open Browser To Haaga-Helia Feedback Form
+    Open Browser                            ${FORM_URL}             ${BROWSER}
+    Maximize Browser Window
+    Set Selenium Speed                      ${DELAY}
+
 Accept Cookies
     Scroll Element Into View                ${COOKIE BANNER}
     Click Element                           ${ACCEPT ALL COOKIES}
@@ -55,6 +60,15 @@ Get Alt Value From Four People Pic On Main Page
     Scroll Element Into View                ${FOUR PEOPLE PIC}
     ${alt value}    Get Element Attribute   ${FOUR PEOPLE PIC}      alt
     IF  len("${alt value}") > 0
+        Log     Ok.
+    ELSE
+        Log     Fail.
+    END
+
+Get Text Value From Name Field
+    Scroll Element Into View                ${NAME FIELD}
+    ${text value}   Get Element Attribute   ${NAME FIELD}           name
+    IF  len("${text value}") > 0
         Log     Ok.
     ELSE
         Log     Fail.
