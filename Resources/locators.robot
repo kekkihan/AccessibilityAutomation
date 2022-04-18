@@ -29,9 +29,13 @@ ${TUOKKO LOGO}              //*[@id="block-hh-content"]/div/div/div[2]/div/div/d
 ${SALOMAA LOGO}             //*[@id="block-hh-content"]/div/div/div[2]/div/div/div[7]/div/div[2]/div/div[2]/div/div/div/div[5]/div/div[2]/a/svg
 
 ### Feedback form ###
+${NAME LABEL}               //*[@id="webform-submission-anna-palautetta-node-1191-add-form"]/div[1]/label
 ${NAME FIELD}               id:edit-nimesi
+${EMAIL LABEL}              //*[@id="webform-submission-anna-palautetta-node-1191-add-form"]/div[2]/label
 ${EMAIL FIELD}              id:edit-sahkopostiosoitteesi
+${FEEDBACK LABEL}           //*[@id="webform-submission-anna-palautetta-node-1191-add-form"]/div[3]/label
 ${FEEDBACK}                 id:edit-palautteeni
+${URL LABEL}                //*[@id="webform-submission-anna-palautetta-node-1191-add-form"]/div[4]/label
 ${URL FIELD}                id:edit-mita-sivua-palaute-koskee-anna-sivun-url-osoite-selaimen-osoitek
 ${RADIO YES}                id:edit-haluan-vastauksen-palautteeseeni-kyll
 ${RADIO NO}                 id:edit-haluan-vastauksen-palautteeseeni-en

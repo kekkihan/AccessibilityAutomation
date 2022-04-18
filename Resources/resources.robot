@@ -25,8 +25,6 @@ Get Alt Value From Logo On Main Page
     ${alt value}    Get Element Attribute   ${HH LOGO}              alt
     IF  len("${alt value}") > 0
         Log     Ok.
-    ELSE
-        Log     Fail.
     END
 
 Get Alt Value From One Person Pic On Main Page
@@ -34,8 +32,6 @@ Get Alt Value From One Person Pic On Main Page
     ${alt value}    Get Element Attribute   ${ONE PERSON PIC}       alt
     IF  len("${alt value}") > 0
         Log     Ok.
-    ELSE
-        Log     Fail.
     END
 
 Get Alt Value From Three Person Pic On Main Page
@@ -43,8 +39,6 @@ Get Alt Value From Three Person Pic On Main Page
     ${alt value}    Get Element Attribute   ${THREE PEOPLE PIC}     alt
     IF  len("${alt value}") > 0
         Log     Ok.
-    ELSE
-        Log     Fail.
     END
 
 Get Alt Value From People Walking Pic On Main Page
@@ -52,8 +46,6 @@ Get Alt Value From People Walking Pic On Main Page
     ${alt value}    Get Element Attribute   ${PEOPLE WALKING PIC}   alt
     IF  len("${alt value}") > 0
         Log     Ok.
-    ELSE
-        Log     Fail.
     END
 
 Get Alt Value From Four People Pic On Main Page
@@ -61,8 +53,13 @@ Get Alt Value From Four People Pic On Main Page
     ${alt value}    Get Element Attribute   ${FOUR PEOPLE PIC}      alt
     IF  len("${alt value}") > 0
         Log     Ok.
-    ELSE
-        Log     Fail.
+    END
+
+Get Text Value From Name Label
+    Scroll Element Into View                ${NAME LABEL}
+    ${text value}   Get Text                ${NAME LABEL}
+    IF  len("${text value}") > 0
+        Log     Ok.
     END
 
 Get Text Value From Name Field
@@ -70,6 +67,46 @@ Get Text Value From Name Field
     ${text value}   Get Element Attribute   ${NAME FIELD}           name
     IF  len("${text value}") > 0
         Log     Ok.
-    ELSE
-        Log     Fail.
+    END
+
+Get Text Value From Email Label
+    Scroll Element Into View                ${EMAIL LABEL}
+    ${text value}   Get Text                ${EMAIL LABEL}
+    IF  len("${text value}") > 0
+        Log     Ok.
+    END
+
+Get Text Value From Email Field
+    Scroll Element Into View                ${EMAIL FIELD}
+    ${text value}   Get Element Attribute   ${EMAIL FIELD}          name
+    IF  len("${text value}") > 0
+        Log     Ok.
+    END
+
+Get Text Value From Feedback Label
+    Scroll Element Into View                ${FEEDBACK LABEL}
+    ${text value}   Get Text                ${FEEDBACK LABEL}
+    IF  len("${text value}") > 0
+        Log     Ok.
+    END
+
+Get Text Value From Feedback Field
+    Scroll Element Into View                ${FEEDBACK}
+    ${text value}   Get Element Attribute   ${FEEDBACK}             name
+    IF  len("${text value}") > 0
+        Log     Ok.
+    END
+
+Get Text Value From Url Label
+    Scroll Element Into View                ${URL LABEL}
+    ${text value}   Get Text                ${URL LABEL}
+    IF  len("${text value}") > 0
+        Log     Ok.
+    END
+
+Get Text Value From Url Field
+    Scroll Element Into View                ${URL FIELD}
+    ${text value}   Get Element Attribute   ${URL FIELD}            name
+    IF  len("${text value}") > 0
+        Log     Ok.
     END
