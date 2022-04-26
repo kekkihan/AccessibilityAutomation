@@ -110,3 +110,22 @@ Get Text Value From Url Field
     IF  len("${text value}") > 0
         Log     Ok.
     END
+
+Get Text Value From Radio Button Label
+    Scroll Element Into View                ${RADIO LABEL}
+    ${text value}   Get Element Attribute   ${RADIO LABEL}          name
+    IF  len("${text value}") > 0
+        Log     Ok.
+    END
+
+Get Text Value From Radio Buttons
+    Scroll Element Into View                ${RADIO YES}
+    ${text value}   Get Element Attribute   ${RADIO YES}            name
+    IF  len("${text value}") > 0
+        Log     Ok.
+    END
+    Scroll Element Into View                ${RADIO NO}
+    ${text value}   Get Element Attribute   ${RADIO NO}             name
+    IF  len("${text value}") > 0
+        Log     Ok.
+    END

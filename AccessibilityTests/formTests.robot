@@ -37,3 +37,11 @@ Verify Feedback Form Url Field Alternative Texts
     Get Text Value From Url Label
     Get Text Value From Url Field
     [Teardown]          Close Browser
+
+Verify Feedback Form Radio Button Alternative Texts
+    [Tags]      form
+    Open Browser To Haaga-Helia Feedback Form
+    Accept Cookies
+    Get Text Value From Radio Button Label
+    Get Text Value From Radio Button Field
+    [Teardown]          Close Browser

@@ -37,5 +37,6 @@ ${FEEDBACK LABEL}           //*[@id="webform-submission-anna-palautetta-node-119
 ${FEEDBACK}                 id:edit-palautteeni
 ${URL LABEL}                //*[@id="webform-submission-anna-palautetta-node-1191-add-form"]/div[4]/label
 ${URL FIELD}                id:edit-mita-sivua-palaute-koskee-anna-sivun-url-osoite-selaimen-osoitek
+${RADIO LABEL}              id:edit-haluan-vastauksen-palautteeseeni
 ${RADIO YES}                id:edit-haluan-vastauksen-palautteeseeni-kyll
 ${RADIO NO}                 id:edit-haluan-vastauksen-palautteeseeni-en
