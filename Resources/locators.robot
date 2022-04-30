@@ -6,7 +6,7 @@ Documentation     A resource file with reusable locators.
 
 ###General###
 ${BROWSER}                  chrome
-${DELAY}                    1
+${DELAY}                    0.4
 ${COOKIE BANNER}            id:CybotCookiebotDialog
 ${ACCEPT ALL COOKIES}       id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll
 ${ACCEPT NES COOKIES}       id:CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll
@@ -40,3 +40,4 @@ ${URL FIELD}                id:edit-mita-sivua-palaute-koskee-anna-sivun-url-oso
 ${RADIO LABEL}              id:edit-haluan-vastauksen-palautteeseeni
 ${RADIO YES}                id:edit-haluan-vastauksen-palautteeseeni-kyll
 ${RADIO NO}                 id:edit-haluan-vastauksen-palautteeseeni-en
+${SUBMIT}                   name:op

@@ -3,6 +3,7 @@ Documentation       Test cases to verify that the form in Haaga-Helia Anna palau
 ...
 ...
 Library             SeleniumLibrary
+Library             BuiltIn
 Resource            ../Resources/resources.robot
 
 *** Test Cases ***
@@ -43,5 +44,6 @@ Verify Feedback Form Radio Button Alternative Texts
     Open Browser To Haaga-Helia Feedback Form
     Accept Cookies
     Get Text Value From Radio Button Label
-    Get Text Value From Radio Button Field
+    Get Text Value From Radio Buttons
+    Get Text Value From Submit Button
     [Teardown]          Close Browser

@@ -20,35 +20,35 @@ Accept Cookies
     Click Element                           ${ACCEPT ALL COOKIES}
     Sleep   2s
 
-Get Alt Value From Logo On Main Page
+Get Alt Value From Logo
     Scroll Element Into View                ${HH LOGO}
     ${alt value}    Get Element Attribute   ${HH LOGO}              alt
     IF  len("${alt value}") > 0
         Log     Ok.
     END
 
-Get Alt Value From One Person Pic On Main Page
+Get Alt Value From One Person Pic
     Scroll Element Into View                ${ONE PERSON PIC}
     ${alt value}    Get Element Attribute   ${ONE PERSON PIC}       alt
     IF  len("${alt value}") > 0
         Log     Ok.
     END
 
-Get Alt Value From Three Person Pic On Main Page
+Get Alt Value From Three Person Pic
     Scroll Element Into View                ${THREE PEOPLE PIC}
     ${alt value}    Get Element Attribute   ${THREE PEOPLE PIC}     alt
     IF  len("${alt value}") > 0
         Log     Ok.
     END
 
-Get Alt Value From People Walking Pic On Main Page
+Get Alt Value From People Walking Pic
     Scroll Element Into View                ${PEOPLE WALKING PIC}
     ${alt value}    Get Element Attribute   ${PEOPLE WALKING PIC}   alt
     IF  len("${alt value}") > 0
         Log     Ok.
     END
 
-Get Alt Value From Four People Pic On Main Page
+Get Alt Value From Four People Pic
     Scroll Element Into View                ${FOUR PEOPLE PIC}
     ${alt value}    Get Element Attribute   ${FOUR PEOPLE PIC}      alt
     IF  len("${alt value}") > 0
@@ -126,6 +126,13 @@ Get Text Value From Radio Buttons
     END
     Scroll Element Into View                ${RADIO NO}
     ${text value}   Get Element Attribute   ${RADIO NO}             name
+    IF  len("${text value}") > 0
+        Log     Ok.
+    END
+
+Get Text Value From Submit Button
+    Scroll Element Into View                ${SUBMIT}
+    ${text value}   Get Element Attribute   ${SUBMIT}               name
     IF  len("${text value}") > 0
         Log     Ok.
     END
