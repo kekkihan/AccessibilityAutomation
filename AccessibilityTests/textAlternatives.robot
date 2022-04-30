@@ -10,33 +10,33 @@ Verify Main Page Alternative Texts 1
     [Tags]      alternativetexts
     Open Browser To Haaga-Helia Main Page
     Accept Cookies
-    Get Alt Value From Logo On Main Page
+    Get Alt Value From Logo
     [Teardown]          Close Browser
 
 Verify Main Page Alternative Texts 2
     [Tags]      alternativetexts
     Open Browser To Haaga-Helia Main Page
     Accept Cookies
-    Get Alt Value From One Person Pic On Main Page
+    Get Alt Value From One Person Pic
     [Teardown]          Close Browser
 
 Verify Main Page Alternative Texts 3
     [Tags]      alternativetexts
     Open Browser To Haaga-Helia Main Page
     Accept Cookies
-    Get Alt Value From Three Person Pic On Main Page
+    Get Alt Value From Three Person Pic
     [Teardown]          Close Browser
 
 Verify Main Page Alternative Texts 4
     [Tags]      alternativetexts
     Open Browser To Haaga-Helia Main Page
     Accept Cookies
-    Get Alt Value From People Walking Pic On Main Page
+    Get Alt Value From People Walking Pic
     [Teardown]          Close Browser
 
 Verify Main Page Alternative Texts 5
     [Tags]      alternativetexts
     Open Browser To Haaga-Helia Main Page
     Accept Cookies
-    Get Alt Value From Four People Pic On Main Page
+    Get Alt Value From Four People Pic
     [Teardown]          Close Browser
