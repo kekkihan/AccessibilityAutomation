@@ -15,6 +15,11 @@ ${ACCEPT SEL COOKIES}       id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllo
 ### URLs ###
 ${MAIN_URL}                 https://www.haaga-helia.fi
 ${FORM_URL}                 https://www.haaga-helia.fi/anna-palautetta
+${EDUCATION URL}            https://www.haaga-helia.fi/fi/koulutus
+${FOR BUSINESS URL}         https://www.haaga-helia.fi/fi/yrityksille
+${RND URL}                  https://www.haaga-helia.fi/fi/tutkimus-ja-kehittaminen
+${TOPICAL URL}              https://www.haaga-helia.fi/fi/ajankohtaista
+${ABOUT URL}                https://www.haaga-helia.fi/fi/haaga-heliasta
 
 ### Non-text content ###
 ${HH LOGO}                  //*[@id="block-sitebranding"]/a/img

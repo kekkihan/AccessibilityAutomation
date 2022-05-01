@@ -64,7 +64,7 @@ Get Text Value From Name Label
 
 Get Text Value From Name Field
     Scroll Element Into View                ${NAME FIELD}
-    ${text value}   Get Element Attribute   ${NAME FIELD}           name
+    ${text value}   Get Element Attribute   ${NAME FIELD}           aria-label
     IF  len("${text value}") > 0
         Log     Ok.
     END
@@ -136,3 +136,45 @@ Get Text Value From Submit Button
     IF  len("${text value}") > 0
         Log     Ok.
     END
+
+Title From Main Page
+    ${title}        Get Title
+    IF  len("${title}") > 0
+        Log     Ok.
+    END
+
+Title From Education Page
+    Go To                                   ${EDUCATION URL}
+    ${title}        Get Title
+    IF  len("${title}") > 0
+        Log     Ok.
+    END
+
+Title From For Business Page
+    Go To                                   ${FOR BUSINESS URL}
+    ${title}        Get Title
+    IF  len("${title}") > 0
+        Log     Ok.
+    END
+
+Title From Rnd Page
+    Go To                                   ${RND URL}
+    ${title}        Get Title
+    IF  len("${title}") > 0
+        Log     Ok.
+    END
+
+Title From Topical Page
+    Go To                                   ${TOPICAL URL}
+    ${title}        Get Title
+    IF  len("${title}") > 0
+        Log     Ok.
+    END
+
+Title From About Page
+    Go To                                   ${ABOUT URL}
+    ${title}        Get Title
+    IF  len("${title}") > 0
+        Log     Ok.
+    END
+
