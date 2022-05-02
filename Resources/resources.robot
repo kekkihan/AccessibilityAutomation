@@ -207,3 +207,24 @@ Get Text From Iata Icon
     IF  len("${text}") > 0
         Log     Ok.
     END
+
+Change Language To English
+    Scroll Element Into View                ${LANGUAGE MENU}
+    Click Button                            ${LANGUAGE MENU}
+    Click Element                           ${EN}
+    Sleep  2s
+
+Change Language To Finnish
+    Scroll Element Into View                ${LANGUAGE MENU}
+    Click Button                            ${LANGUAGE MENU}
+    Click Element                           ${FI}
+    Sleep  2s
+
+Get Lang Value
+    ${selected}     Get Text                ${LANGUAGE}
+    ${lang}         Get Element Attribute   //html             lang
+    IF  "${selected}" == "FI" and "${lang}" == "fi"
+            Log     Ok.
+    ELSE IF  "${selected}" == "EN" and "${lang}" == "en"
+            Log     Ok.
+    END

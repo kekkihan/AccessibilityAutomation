@@ -11,6 +11,10 @@ ${COOKIE BANNER}            id:CybotCookiebotDialog
 ${ACCEPT ALL COOKIES}       id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll
 ${ACCEPT NES COOKIES}       id:CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll
 ${ACCEPT SEL COOKIES}       id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection
+${LANGUAGE MENU}            id:language-dropdown
+${LANGUAGE}                 //*[@id="language-dropdown"]/span[2]
+${FI}                       //*[@id="block-language-block-language-interface"]/div/ul/li[1]
+${EN}                       //*[@id="block-language-block-language-interface"]/div/ul/li[2]
 
 ### URLs ###
 ${MAIN_URL}                 https://www.haaga-helia.fi
