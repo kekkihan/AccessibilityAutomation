@@ -178,3 +178,32 @@ Title From About Page
         Log     Ok.
     END
 
+Get Text From News Link
+    ${text}         Get Text                ${ALL NEWS LINK}
+    IF  len("${text}") > 0
+        Log     Ok.
+    END
+
+Get Text From Events Link
+    ${text}         Get Text                ${MORE EVENTS LINK}
+    IF  len("${text}") > 0
+        Log     Ok.
+    END
+
+Get Text From Stories Link
+    ${text}         Get Text                ${ALL STORIES LINK}
+    IF  len("${text}") > 0
+        Log     Ok.
+    END
+
+Get Text From Accountor Icon Link
+    ${text}         Get Text                ${ACCOUNTOR ICON LINK}
+    IF  len("${text}") > 0
+        Log     Ok.
+    END
+
+Get Text From Iata Icon
+    ${text}         Get Text                ${IATA ICON LINK}
+    IF  len("${text}") > 0
+        Log     Ok.
+    END

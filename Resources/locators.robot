@@ -27,11 +27,6 @@ ${ONE PERSON PIC}           //*[@id="block-hh-content"]/div/div/div[1]/div/div/d
 ${THREE PEOPLE PIC}         //*[@id="block-hh-content"]/div/div/div[1]/div/div/div/div/div[2]/div/a/div/div[2]/div/div/img
 ${PEOPLE WALKING PIC}       //*[@id="block-hh-content"]/div/div/div[1]/div/div/div/div/div[4]/div/a/div/div[2]/div/div/img
 ${FOUR PEOPLE PIC}          //*[@id="block-hh-content"]/div/div/div[1]/div/div/div/div/div[6]/div/a/div/div[2]/div/div/img
-${ACCOUNTOR LOGO}           //*[@id="block-hh-content"]/div/div/div[2]/div/div/div[7]/div/div[2]/div/div[2]/div/div/div/div[1]/div/div[2]/a/svg
-${EY LOGO}                  //*[@id="block-hh-content"]/div/div/div[2]/div/div/div[7]/div/div[2]/div/div[2]/div/div/div/div[2]/div/div[2]/a/svg
-${OP LOGO}                  //*[@id="block-hh-content"]/div/div/div[2]/div/div/div[7]/div/div[2]/div/div[2]/div/div/div/div[3]/div/div[2]/a/svg
-${TUOKKO LOGO}              //*[@id="block-hh-content"]/div/div/div[2]/div/div/div[7]/div/div[2]/div/div[2]/div/div/div/div[4]/div/div[2]/a/svg
-${SALOMAA LOGO}             //*[@id="block-hh-content"]/div/div/div[2]/div/div/div[7]/div/div[2]/div/div[2]/div/div/div/div[5]/div/div[2]/a/svg
 
 ### Feedback form ###
 ${NAME LABEL}               //*[@id="webform-submission-anna-palautetta-node-1191-add-form"]/div[1]/label
@@ -46,3 +41,10 @@ ${RADIO LABEL}              id:edit-haluan-vastauksen-palautteeseeni
 ${RADIO YES}                id:edit-haluan-vastauksen-palautteeseeni-kyll
 ${RADIO NO}                 id:edit-haluan-vastauksen-palautteeseeni-en
 ${SUBMIT}                   name:op
+
+### Links ###
+${ALL NEWS LINK}            //*[@id="block-hh-content"]/div/div/div[2]/div/div/div[2]/div/div[3]/a
+${MORE EVENTS LINK}         //*[@id="block-hh-content"]/div/div/div[2]/div/div/div[3]/div/div[3]/a
+${ALL STORIES LINK}         //*[@id="block-hh-content"]/div/div/div[2]/div/div/div[4]/div/div[3]/a
+${ACCOUNTOR ICON LINK}      //*[@id="block-hh-content"]/div/div/div[2]/div/div/div[7]/div/div[2]/div/div[2]/div/div/div/div[1]/div/div[2]/a
+${IATA ICON LINK}           //*[@id="block-partnerslogo"]/div/div/div[3]/div/div/div/div/a
