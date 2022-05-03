@@ -3,6 +3,7 @@ Documentation       Test cases to verify that lang attribute changes when the la
 ...
 ...
 Library             SeleniumLibrary
+Library             BuiltIn
 Resource            ../Resources/resources.robot
 
 *** Test Cases ***

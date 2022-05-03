@@ -25,6 +25,8 @@ Get Alt Value From Logo
     ${alt value}    Get Element Attribute   ${HH LOGO}              alt
     IF  len("${alt value}") > 0
         Log     Ok.
+    ELSE
+        Fail        No text available.
     END
 
 Get Alt Value From One Person Pic
@@ -32,6 +34,8 @@ Get Alt Value From One Person Pic
     ${alt value}    Get Element Attribute   ${ONE PERSON PIC}       alt
     IF  len("${alt value}") > 0
         Log     Ok.
+    ELSE
+        Fail        No text available.
     END
 
 Get Alt Value From Three Person Pic
@@ -39,6 +43,8 @@ Get Alt Value From Three Person Pic
     ${alt value}    Get Element Attribute   ${THREE PEOPLE PIC}     alt
     IF  len("${alt value}") > 0
         Log     Ok.
+    ELSE
+        Fail        No text available.
     END
 
 Get Alt Value From People Walking Pic
@@ -46,6 +52,8 @@ Get Alt Value From People Walking Pic
     ${alt value}    Get Element Attribute   ${PEOPLE WALKING PIC}   alt
     IF  len("${alt value}") > 0
         Log     Ok.
+    ELSE
+        Fail        No text available.
     END
 
 Get Alt Value From Four People Pic
@@ -53,6 +61,8 @@ Get Alt Value From Four People Pic
     ${alt value}    Get Element Attribute   ${FOUR PEOPLE PIC}      alt
     IF  len("${alt value}") > 0
         Log     Ok.
+    ELSE
+        Fail        No text available.
     END
 
 Get Text Value From Name Label
@@ -60,6 +70,8 @@ Get Text Value From Name Label
     ${text value}   Get Text                ${NAME LABEL}
     IF  len("${text value}") > 0
         Log     Ok.
+    ELSE
+        Fail        No text available.
     END
 
 Get Text Value From Name Field
@@ -67,6 +79,8 @@ Get Text Value From Name Field
     ${text value}   Get Element Attribute   ${NAME FIELD}           aria-label
     IF  len("${text value}") > 0
         Log     Ok.
+    ELSE
+        Fail        No text available.
     END
 
 Get Text Value From Email Label
@@ -74,6 +88,8 @@ Get Text Value From Email Label
     ${text value}   Get Text                ${EMAIL LABEL}
     IF  len("${text value}") > 0
         Log     Ok.
+    ELSE
+        Fail        No text available.
     END
 
 Get Text Value From Email Field
@@ -81,6 +97,8 @@ Get Text Value From Email Field
     ${text value}   Get Element Attribute   ${EMAIL FIELD}          name
     IF  len("${text value}") > 0
         Log     Ok.
+    ELSE
+        Fail        No text available.
     END
 
 Get Text Value From Feedback Label
@@ -88,6 +106,8 @@ Get Text Value From Feedback Label
     ${text value}   Get Text                ${FEEDBACK LABEL}
     IF  len("${text value}") > 0
         Log     Ok.
+    ELSE
+        Fail        No text available.
     END
 
 Get Text Value From Feedback Field
@@ -95,6 +115,8 @@ Get Text Value From Feedback Field
     ${text value}   Get Element Attribute   ${FEEDBACK}             name
     IF  len("${text value}") > 0
         Log     Ok.
+    ELSE
+        Fail        No text available.
     END
 
 Get Text Value From Url Label
@@ -102,6 +124,8 @@ Get Text Value From Url Label
     ${text value}   Get Text                ${URL LABEL}
     IF  len("${text value}") > 0
         Log     Ok.
+    ELSE
+        Fail        No text available.
     END
 
 Get Text Value From Url Field
@@ -109,6 +133,8 @@ Get Text Value From Url Field
     ${text value}   Get Element Attribute   ${URL FIELD}            name
     IF  len("${text value}") > 0
         Log     Ok.
+    ELSE
+        Fail        No text available.
     END
 
 Get Text Value From Radio Button Label
@@ -116,6 +142,9 @@ Get Text Value From Radio Button Label
     ${text value}   Get Element Attribute   ${RADIO LABEL}          name
     IF  len("${text value}") > 0
         Log     Ok.
+    ELSE
+        Fail        No text available.
+
     END
 
 Get Text Value From Radio Buttons
@@ -123,11 +152,15 @@ Get Text Value From Radio Buttons
     ${text value}   Get Element Attribute   ${RADIO YES}            name
     IF  len("${text value}") > 0
         Log     Ok.
+    ELSE
+        Fail        No text available.
     END
     Scroll Element Into View                ${RADIO NO}
     ${text value}   Get Element Attribute   ${RADIO NO}             name
     IF  len("${text value}") > 0
         Log     Ok.
+    ELSE
+        Fail        No text available.
     END
 
 Get Text Value From Submit Button
@@ -135,12 +168,16 @@ Get Text Value From Submit Button
     ${text value}   Get Element Attribute   ${SUBMIT}               name
     IF  len("${text value}") > 0
         Log     Ok.
+    ELSE
+        Fail        No text available.
     END
 
 Title From Main Page
     ${title}        Get Title
     IF  len("${title}") > 0
         Log     Ok.
+    ELSE
+        Fail        No title.
     END
 
 Title From Education Page
@@ -148,6 +185,8 @@ Title From Education Page
     ${title}        Get Title
     IF  len("${title}") > 0
         Log     Ok.
+    ELSE
+        Fail        No title. 
     END
 
 Title From For Business Page
@@ -155,6 +194,8 @@ Title From For Business Page
     ${title}        Get Title
     IF  len("${title}") > 0
         Log     Ok.
+    ELSE
+        Fail        No title. 
     END
 
 Title From Rnd Page
@@ -162,6 +203,8 @@ Title From Rnd Page
     ${title}        Get Title
     IF  len("${title}") > 0
         Log     Ok.
+    ELSE
+        Fail        No title. 
     END
 
 Title From Topical Page
@@ -169,6 +212,8 @@ Title From Topical Page
     ${title}        Get Title
     IF  len("${title}") > 0
         Log     Ok.
+    ELSE
+        Fail        No title. 
     END
 
 Title From About Page
@@ -176,36 +221,48 @@ Title From About Page
     ${title}        Get Title
     IF  len("${title}") > 0
         Log     Ok.
+    ELSE
+        Fail        No title.    
     END
 
 Get Text From News Link
     ${text}         Get Text                ${ALL NEWS LINK}
     IF  len("${text}") > 0
         Log     Ok.
+    ELSE
+        Fail        No link text.
     END
 
 Get Text From Events Link
     ${text}         Get Text                ${MORE EVENTS LINK}
     IF  len("${text}") > 0
         Log     Ok.
+    ELSE
+        Fail        No link text.
     END
 
 Get Text From Stories Link
     ${text}         Get Text                ${ALL STORIES LINK}
     IF  len("${text}") > 0
         Log     Ok.
+    ELSE
+        Fail        No link text.
     END
 
 Get Text From Accountor Icon Link
     ${text}         Get Text                ${ACCOUNTOR ICON LINK}
     IF  len("${text}") > 0
         Log     Ok.
+    ELSE
+        Fail        No link text.
     END
 
 Get Text From Iata Icon
     ${text}         Get Text                ${IATA ICON LINK}
     IF  len("${text}") > 0
         Log     Ok.
+    ELSE
+        Fail        No link text.
     END
 
 Change Language To English
@@ -227,4 +284,6 @@ Get Lang Value
             Log     Ok.
     ELSE IF  "${selected}" == "EN" and "${lang}" == "en"
             Log     Ok.
+    ELSE
+        Fail        Language selections do not match.
     END

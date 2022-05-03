@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation       Test cases to verify that all of the non-text content has alternative text.
+Documentation       Test cases to verify that all of the non-textual content has alternative text.
 ...
 ...
 Library             SeleniumLibrary
