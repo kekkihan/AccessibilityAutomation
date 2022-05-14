@@ -3,6 +3,7 @@ Documentation       Test cases to verify that all of the non-textual content has
 ...
 ...
 Library             SeleniumLibrary
+Library             BuiltIn
 Resource            ../Resources/resources.robot
 
 *** Test Cases ***
